@@ -29,6 +29,7 @@ The ERC20 contract is part of OpenZeppelin’s Contracts library. It implements 
 ### Class Diagram
 
 ```mermaid
+classDiagram
 ERC20 <|-- Ownable
 ERC20 : +totalSupply()
 ERC20 : +balanceOf(address)
