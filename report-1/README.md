@@ -52,28 +52,6 @@ ERC20 : +burn(amount) [owner only]
 
 **Observation:** Static and performance analysis confirms contract is secure and efficient.
 
-## Dynamic Analysis — Echidna Fuzzing
-
-**Tool Used:** [Echidna](https://github.com/crytic/echidna)
-
-Command run:
-
-```
-echidna-test contracts/token/ERC20/ERC20.sol --contract ERC20
-```
-
-**Results:**
-
-```
-# (Example output if tests passed)
-All tests passed!
-```
-
-**Observations:**
-
-* No counterexamples found ✅
-* Confirms contract behaves as expected under random inputs and edge cases.
-
 ## Functional Review
 
 | Function       | Purpose                            | Security Observations             |
@@ -108,7 +86,6 @@ All tests passed!
 * OpenZeppelin ERC20 Contracts: [GitHub](https://github.com/OpenZeppelin/openzeppelin-contracts)
 * Slither Static Analyzer: [GitHub](https://github.com/crytic/slither)
 * Semgrep: [GitHub](https://github.com/returntocorp/semgrep)
-* Echidna Fuzzer: [GitHub](https://github.com/crytic/echidna)
 * Solidity Documentation: [Solidity](https://docs.soliditylang.org)
 * Foundry Framework: [Foundry](https://github.com/foundry-rs/foundry)
 
