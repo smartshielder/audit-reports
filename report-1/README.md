@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-This report audits the OpenZeppelin ERC20 token contract. No critical or high-risk vulnerabilities were identified. All functions comply with the ERC20 standard, access control is properly enforced, and Solidity’s built-in overflow protections are leveraged. Static analysis using Slither, dynamic fuzzing using Echidna, and Semgrep performance analysis confirm the contract is secure and follows best practices.
+This report audits the OpenZeppelin ERC20 token contract. No critical or high-risk vulnerabilities were identified. All functions comply with the ERC20 standard, access control is properly enforced, and Solidity’s built-in overflow protections are leveraged. Static analysis using Slither and Semgrep performance analysis confirm the contract is secure and follows best practices.
 
 ## Table of Contents
 
