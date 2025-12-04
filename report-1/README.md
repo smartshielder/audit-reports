@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-This report audits the OpenZeppelin ERC20 token contract. No critical or high-risk vulnerabilities were identified. All functions comply with the ERC20 standard, access control is properly enforced, and Solidity’s built-in overflow protections are leveraged. Static analysis using Slither, dynamic fuzzing using Echidna, and Semgrep performance analysis confirm the contract is secure and follows best practices.
+This report audits the OpenZeppelin ERC20 token contract. No critical or high-risk vulnerabilities were identified. All functions comply with the ERC20 standard, access control is properly enforced, and Solidity’s built-in overflow protections are leveraged. Static analysis using Slither and Semgrep performance analysis confirm the contract is secure and follows best practices.
 
 ## Table of Contents
 
@@ -52,28 +52,6 @@ ERC20 : +burn(amount) [owner only]
 
 **Observation:** Static and performance analysis confirms contract is secure and efficient.
 
-## Dynamic Analysis — Echidna Fuzzing
-
-**Tool Used:** [Echidna](https://github.com/crytic/echidna)
-
-Command run:
-
-```
-echidna-test contracts/token/ERC20/ERC20.sol --contract ERC20
-```
-
-**Results:**
-
-```
-# (Example output if tests passed)
-All tests passed!
-```
-
-**Observations:**
-
-* No counterexamples found ✅
-* Confirms contract behaves as expected under random inputs and edge cases.
-
 ## Functional Review
 
 | Function       | Purpose                            | Security Observations             |
@@ -108,7 +86,6 @@ All tests passed!
 * OpenZeppelin ERC20 Contracts: [GitHub](https://github.com/OpenZeppelin/openzeppelin-contracts)
 * Slither Static Analyzer: [GitHub](https://github.com/crytic/slither)
 * Semgrep: [GitHub](https://github.com/returntocorp/semgrep)
-* Echidna Fuzzer: [GitHub](https://github.com/crytic/echidna)
 * Solidity Documentation: [Solidity](https://docs.soliditylang.org)
 * Foundry Framework: [Foundry](https://github.com/foundry-rs/foundry)
 
